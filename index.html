@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excuse Note</title>
+    <link rel="styleSheet" href="style.css"/>
+</head>
+
+<body>
+    <form action="/excuse/excuse.php" method="get" id="excuse">
+        <input type="text" name="name" id="name" placeholder="Nom de votre enfant" required/>
+        <fieldset>
+            <legend>Genre de l'enfant</legend>
+            <div id="boy">
+                <input type="radio" name="gender" value="boy" required/>
+                <label for="boy">garçon</label>
+            </div>
+            <div id="girl">
+                <input type="radio" name="gender" value="girl"/>
+                <label for="girl">fille</label>
+            </div>
+            <div id="queer">
+                <input type="radio" name="gender" value="queer"/>
+                <label for="queer">queer</label>
+            </div>
+            <div id="other">
+                <input type="radio" name="gender" value="other"/>
+                <label for="other">autre</label>
+            </div>
+        </fieldset>
+        <input type="text" name="teacher" id="teacher" placeholder="Nom du professeur" required/>
+        <fieldset>
+            <legend>Raison de l'absence</legend>
+            <div id="illness">
+                <input type="radio" name="excuse" value="illness" required/>
+                <label for="illness">maladie</label>
+            </div>
+            <div id="death">
+                <input type="radio" name="excuse" value="death"/>
+                <label for="death">mort d'un proche</label>
+            </div>
+            <div id="activity">
+                <input type="radio" name="excuse" value="activity"/>
+                <label for="activity">activité extrascolaire</label>
+            </div>
+            <div id="strike">
+                <input type="radio" name="excuse" value="strike"/>
+                <label for="strike">grève</label>
+            </div>
+        </fieldset>
+        <input type="submit" value="Générer lettre d'excuse"/>
+    </form>
+</body>
+</html>

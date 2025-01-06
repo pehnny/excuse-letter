@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#excuse {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 2rem;
+    justify-items: left;
+    align-items: center;
+    width: fit-content;
+    margin: 2rem auto;
+
+    input, fieldset {
+        width: 100%;
+    }
+
+    fieldset {
+        display: grid;
+        grid-auto-flow: row;
+        place-items: start;
+
+        div {
+            display: grid;
+            grid-gap: 1rem;
+            grid-auto-flow: column;
+            grid-template-rows: subgrid;
+        }
+    }
+}
