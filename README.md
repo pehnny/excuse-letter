@@ -11,4 +11,4 @@ _PORT can be any valid 4 digits number like `5000`_.
 
 # Use
 Once the server is launched, open a browser and go to the corresponding URL :
-<localhost:5000/>
+<http://www.localhost:5000/>
